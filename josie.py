@@ -24,9 +24,10 @@ circles = cv2.HoughCircles(small,cv2.HOUGH_GRADIENT,dp = 1,minDist = 100, param1
 circles = np.uint16(np.around(circles))
 for i in circles[0, :]:
     # draw the outer circle
-    cv2.circle(small_h, (i[0], i[1]), i[2], (0, 255, 0), 2)
+    #cv2.circle(small_h, (i[0], i[1]), i[2], (0, 255, 0), 2)
     # draw the center of the circle
-    cv2.circle(small_h, (i[0], i[1]), 2, (0, 0, 255), 3)
+    #cv2.circle(small_h, (i[0], i[1]), 2, (0, 0, 255), 3)
+    pass
 
 # print how many circles were detected
 #print(circles[0][0][0])

@@ -24,9 +24,9 @@ for idx in range(num):
     cam = cv2.VideoCapture(0) #opens up the video capture (video device 0)
     s, im = cam.read() # captures image (im)
     cam.release() # shuts down the camera stream
-    cv2.imwrite(str(idx+1)+typ,im) # saves the image
-    
+    cv2.imwrite('raw'+str(idx+1)+typ,im) # saves the image
+
     print('Photo taken! :)')
 
-
+print('Finished. Enjoy your beets!!')
 
